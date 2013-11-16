@@ -1,6 +1,6 @@
-<project
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
-	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.triompha</groupId>
 	<artifactId>triompha</artifactId>
@@ -75,10 +75,11 @@
 				<artifactId>aspectjweaver</artifactId>
 				<version>1.5.3</version>
 			</dependency>
+
 			<dependency>
 				<groupId>org.slf4j</groupId>
-				<artifactId>slf4j-api</artifactId>
-				<version>1.6.2</version>
+				<artifactId>slf4j-log4j12</artifactId>
+				<version>1.6.1</version>
 			</dependency>
 			<!-- end common -->
 
@@ -270,5 +271,8 @@
 	<modules>
 		<module>triompha-common</module>
 		<module>triompha-dao</module>
+		<module>triompha-cachewapper</module>
+		<module>triompha-cache</module>
+		<module>triompha-jsqlparser</module>
 	</modules>
 </project>
